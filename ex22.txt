@@ -1,0 +1,34 @@
+print 				# Output of program
+'' "" 				# String must be inside quotes
+# 					# Beginning of comment
+,					# After print and smth after it means that smth after comma will be output in the same line
+>=					# More or equal
+<=					# Less or equal
+smth				# String without quotes writting with lower case letters, digits and underscores is variable
+=					# Assign value to variable
+%r					# In string these symbols mean 'raw data'. They are using in debugging. You must write % and
+					# variable or value after that and  (In Ruby it calls string extrapolation)
+%s 					# Using for embding string
+%d 					# Using for embding digits
+False				# False, boolean type
+True				# True, boolean type
+\n					# Symbol of new line
+"""					# Open symbol for text. You don't need to put each string into quotes
+\t 					# Symbol for tabbing text
+\\					# Symbol for writing \ in string
+raw_input() 		# Input of user
+int(smth)			# Digit type of data
+from				# From where will you take something for import
+sys 				# Module of Python
+import				# Comand to import something
+argv				# List of arguments from comand line. sys.argv[0] is string name
+f = open(smth)		# Assign to variable f object file of file with name smth
+f.read() 			# Output content of file with name smth
+f.close()			# Close file with name smth
+f.readline() 		# Output line of file with name smth
+f = open(smth, 'w') # Open file in write mode
+f.truncate()		# Delete all file content
+f.write('text')		# Write string 'text' to file
+def test(*args):	# Define function with name test and arguments
+f.seek(0)			# Go to 0 byte in file
+return				# Function will return data after the word return 
