@@ -1,21 +1,24 @@
 from sys import exit
 
-def hasNumbers(inputString):
+def contain_only(inputString):
 	return all(char.isdigit() for char in inputString)
 
-def count(inputString):
-	count = ''
-	for char in inputString:
-		if char.isdigit():
-			count += char
-	return count
+# def extract_digits_only(inputString):
+# 	count = ''
+# 	for char in inputString:
+# 		if char.isdigit():
+# 			count += char
+# 	return count
+
+# 	# count = "".join([c for c in inputString if c.isdigit()])
+# 	# return count
 
 def gold_room():
 	print "This room is full of gold. How much do you take?"
 
 	next = raw_input("> ")
-	if  hasNumbers(next):
-		how_much = int(count(next))
+	if  contain_only(next):
+		how_much = int(next)
 	else:
 	 	dead("Man, learn to type a number.")
 
